@@ -1,0 +1,185 @@
+/* Общий стиль для body */
+body {
+    background-image: url('https://example.com/cake-background.jpg'); /* Фон суреті */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-attachment: fixed;
+    overflow: auto;
+}
+
+/* Верхняя панель с логотипом, поиском и корзиной */
+.top-bar {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.small-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/* Список категорий */
+.category-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.category-list li {
+    display: inline-block;
+}
+
+.category-list a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    padding: 10px 15px;
+    background-color: #ff6b6b;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.category-list a:hover {
+    background-color: #ff8585;
+}
+
+/* Форма поиска */
+.search-form {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-input {
+    padding: 8px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+}
+
+.search-btn {
+    position: absolute;
+    right: 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #ff6b6b;
+    font-size: 20px;
+}
+
+/* Иконка корзины */
+.cart-icon {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    position: relative;
+}
+
+.cart-icon i {
+    font-size: 24px;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+/* Контейнер с основным содержимым */
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    margin-top: 20px;
+    flex-grow: 1;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 28px;
+    color: #d2691e;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    display: block;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #ff8585;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+footer a {
+    color: #888;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
